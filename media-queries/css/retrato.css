@@ -1,9 +1,9 @@
 @charset 'UTF-8';
 
 body {
+    background-attachment: fixed;
     background-image: url('../imagens/cev-portrait.jpg');
-    background-color: #233eff;
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center bottom;
 }
