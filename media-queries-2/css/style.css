@@ -1,0 +1,71 @@
+@charset 'UTF-8';
+
+/* gerais */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+body {
+    background-color: #233eff;
+    background-repeat: no-repeat !important;
+    background-size: contain;
+}
+
+header menu ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: #1526a7;
+    padding: 5px;
+}
+
+header menu ul li {
+    color: white;
+    padding: 5px 10px;
+}
+
+h1 {
+    color: white;
+    padding: 10px;
+    text-shadow: 2px 2px 0 #1526a7;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.219);
+    border-radius: 8px;
+    margin: 10px auto;
+    max-width: 800px;
+    padding: 20px;
+    width: 95%;
+}
+
+/* retrato */
+@media screen and (orientation: portrait) {
+    body {
+        background-attachment: fixed;
+        background-image: url('../imagens/cev-portrait.jpg');
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+/* paisagem */
+@media screen and (orientation: landscape) {
+    body {
+        background-attachment: fixed;
+        background-image: url('../imagens/cev-landscape.jpg');
+        background-position: left bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
