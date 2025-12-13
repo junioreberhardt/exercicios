@@ -42,6 +42,7 @@ h1 {
 #pc,
 #tv {
     display: none;
+    margin: 0 auto;
 }
 
 #phone {

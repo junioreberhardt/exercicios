@@ -1,6 +1,25 @@
 @charset 'UTF-8';
 
-@media print {}
+@media print {
+    body {
+        background-image: url('../imagens/back-print.jpg');
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main h1 {
+        color: black;
+        font-size: 16px;
+        text-shadow: none;
+    }
+
+    #phone {
+        display: none;
+    }
+
+    #print {
+        display: block;
+    }
+}
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
 
@@ -15,7 +34,6 @@
 
     #tablet {
         display: block;
-        margin: 0 auto;
     }
 }
 
@@ -32,7 +50,6 @@
 
     #pc {
         display: block;
-        margin: 0 auto;
     }
 }
 
@@ -49,6 +66,5 @@
 
     #tv {
         display: block;
-        margin: 0 auto;
     }
 }
