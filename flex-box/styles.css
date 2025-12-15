@@ -1,0 +1,19 @@
+@charset 'UTF-8';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    background-color: lightsalmon;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.item {
+    background-color: lightseagreen;
+    border: 1px solid black;
+    flex-basis: 150px;
+}
