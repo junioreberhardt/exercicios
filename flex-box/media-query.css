@@ -1,0 +1,26 @@
+@media (max-width: 480px) {
+    #conteiner_header {
+        flex-flow: column nowrap;
+
+        .logo {
+            flex-basis: 100%;
+            font-size: 1.84rem;
+            margin-bottom: 10px;
+        }
+
+        .menu-header {
+            flex-flow: column nowrap;
+            gap: 2px;
+
+            a {
+                width: 95vw;
+            }
+        }
+    }
+}
+
+@media (min-width: 480px) and (max-width: 826px) {
+    .menu-header {
+        margin-top: 10px;
+    }
+}
