@@ -1,0 +1,71 @@
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1rem;
+    height: 100vh;
+    line-height: 1.5rem;
+    /* width: 100vw; isso cria rolagem horizontal */
+}
+
+.content-normal {
+    padding: 20px;
+}
+
+.content-flex {
+    background-color: lightcoral;
+    padding: 20px;
+}
+
+h1,
+h2,
+p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.content-flex {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.media-text {
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-between;
+}
+
+.text-media {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.text {
+    flex: 1 1 500px;
+}
+
+.media {
+    flex: 1 0 400px;
+    margin: auto;
+
+    img {
+        display: block;
+        margin: auto;
+        padding: 10px;
+        width: 300px;
+    }
+
+    iframe {
+        display: block;
+        margin: auto;
+        width: 90%;
+    }
+}
