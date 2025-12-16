@@ -1,5 +1,5 @@
 @charset 'UTF-8';
-@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
     box-sizing: border-box;
@@ -8,11 +8,12 @@
 }
 
 body {
-    background-image: radial-gradient(circle, #271e29, #2b1f28, #2f2027, #312125, #332324, #342222, #342220, #34211e, #331d1b, #321a18, #301615, #2f1212);
-    font-family: "Google Sans Flex", sans-serif;
+    background-image: linear-gradient(35deg, #c9daac, #ffe792);
+    font-family: "Inter", sans-serif;
     font-size: 1rem;
     height: 100vh;
-    width: 100vw;
+    overflow-x: hidden;
+    /* width: 100vw; */
 }
 
 #conteiner_header {
@@ -23,37 +24,53 @@ body {
     padding: 10px;
 
     .logo {
-        color: rgb(238, 233, 233);
-        flex: 0 0 350px;
+        color: #e6546b;
+        justify-content: center;
+        flex: 0 0 315px;
+        font-size: clamp(2.05rem, 2vw, 4rem);
+        text-align: center;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
     }
 
     .menu-header {
         display: flex;
         flex-flow: row wrap;
         gap: 10px;
+        margin-top: 10px;
         justify-content: flex-end;
 
         a {
-            background-color: #271E29;
+            background-color: #8acbb5;
             border-radius: 8px;
-            color: #9a9a9a;
+            color: #333;
             padding: 10px;
             text-align: center;
             text-decoration: none;
             transition: all 0.3s ease;
 
             &:hover {
-                background-color: #2F1212;
-                color: #fff;
+                background-color: #c9daa4;
             }
         }
     }
 }
 
 #conteiner_main {
-    background-color: white;
+    background-color: #c9daa4;
     border-radius: 8px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
     margin: 10px;
-    padding: 10px;
+    padding: 30px;
+
+    h2 {
+        color: #e6546b;
+        margin-bottom: 10px;
+    }
+
+    p {
+        color: #333;
+        line-height: 1.6rem;
+        margin-bottom: 20px;
+        text-indent: 30px;
+    }
 }
